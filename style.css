@@ -191,6 +191,22 @@ a {
   color: darkblue!important;
   opacity: 1;
 }
+
+  .footer-links-night {
+  display: flex;
+  align-items: center;
+}
+.footer-links-night a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links-night a:hover {
+  color: lightblue!important;
+  opacity: 1;
+}
 .footer .fa-heart {
   color: #D23333;
 }
@@ -199,3 +215,12 @@ a {
   color: black;
 }
 
+.buttons {
+  display: flex;
+  margin: 0 52px;
+  padding: 0 25px;
+  /*align-items: center;*/
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
