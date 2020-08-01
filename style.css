@@ -4,52 +4,120 @@ html, body {
   overflow: hidden
 }
 
-body {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/alexh/image/upload/v1596288019/DSC05368_aufrrz.jpg);
+.image {
+  background-image:url(https://res.cloudinary.com/alexh/image/upload/v1596288019/DSC05368_aufrrz.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
-  font-family: Acumin-light;
-  /*position: fixed;*/
 }
-.landing-text {
+
+#morning {
+  background-image: linear-gradient(rgb(255 255 255 / 86%),rgb(199 158 42 / 40%)), url(https://res.cloudinary.com/alexh/image/upload/v1596288019/DSC05368_aufrrz.jpg);
+
+}
+
+#evening {
+  background-image: linear-gradient(#1d2061,rgba(0,0,0,0.4)), url(https://res.cloudinary.com/alexh/image/upload/v1596288019/DSC05368_aufrrz.jpg);
+}
+
+a {
+  text-decoration: none!important;
+}
+
+.hover i:hover {
+  color: orange!important;
+  transform: scale(1.3);
+
+}
+
+.landing-text-dark {
   background-size: cover;
   background-position: center;
-  padding: 5% 25% 25%;
+  padding: 5% 0 25%;
   margin: 0;
+  text-align: center;
+  display: flex;
+  color: black;
+  justify-content: center;
 }
 
-body h1 {
+.landing-text-light {
+  background-size: cover;
+  background-position: center;
+  padding: 5% 0 25%;
   margin: 0;
-  padding-bottom: 5%;
-  color: white;`
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.banner p {
-  font-size: 20px;
+  text-align: center;
+  display: flex;
   color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  justify-content: center;
 }
 
+.day {
+  background-color: rgba(255,255,255, 0.4);
+  width: 50%;
+  border-radius: 5px;
+  margin: 0;
+  padding-bottom: 2%;
+  opacity: .85;
+  font-size: 32px;
+  font-family: Acumin Pro Thin;
+}
+
+.night {
+  background-color: rgba(0,0,0, 0.4);
+  width: 50%;
+  border-radius: 5px;
+  margin: 0;
+  padding-bottom: 2%;
+  opacity: .85;
+  font-size: 32px;
+  font-family: Acumin Pro Thin;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  font-family: Acumin Pro Bold;
+}
 .btn-ghost {
-  color: #FFF;
-  border: 10px solid #FFF;
+  color: black;
+  border: 2px solid black;
   padding: 8px 24px;
-  border-radius: 20px;
+  border-radius: 5px;
   font-weight: lighter;
-  opacity: 1;
+  opacity: .65;
   transition: opacity 0.3s ease;
 }
 
 .btn-ghost:hover {
-  opacity: .75;
-  color: black;
+  color: #014668;
+  border: 2px solid #014668;
+  transform:scale(1.05);
+  box-shadow: 2px 5px 2px;
+  opacity: 1;
+}
+
+.btn-white-ghost {
+  color: white;
+  border: 2px solid white;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-weight: lighter;
+  opacity: .85;
+  transition: opacity 0.3s ease;
+}
+
+.btn-white-ghost:hover {
+  color: orange;
+  transform:scale(1.05);
+  border: 2px solid orange;
+  box-shadow: 2px 5px 2px;
 }
 
 .btn-flat {
@@ -79,3 +147,55 @@ body h1 {
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
 }
+
+.avatar-square {
+  width: 40px;
+  border-radius: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+
+.navbar-lewagon {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+  border-bottom: .5px solid gray;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin-bottom: 0;
+  padding: 0 20px;
+  color: rgba(0,0,0,0.1);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  color: darkblue!important;
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+.footer-copyright {
+  color: black;
+}
+
