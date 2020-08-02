@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="https://use.typekit.net/phi4xco.css">
     <script src="https://kit.fontawesome.com/cba4ce51d7.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body id="body">
     <div class="landing-text-dark image" id="morning">
-      <div class="container">
+      <div class="container" id="container">
+        <div class="footer-links">
+          <a class="hover" href=""><i class="fas fa-umbrella-beach" style="display: flex; justify-content: right; color:black; text-decoration: none;"></i></a>
+          <a class="hover" href=""><i class="fas fa-cat" style="display: flex; justify-content: right; color:black; text-decoration: none;"></i></a>
+          <a class="hover" href=""><i class="fas fa-building" style="display: flex; justify-content: right; color:black; text-decoration: none;"></i></a>
+          <a class="hover" href=""><i class="fas fa-mountain" style="display: flex; justify-content: right; color:black; text-decoration: none;"></i></a> |
           <a class="hover" href="dark.html"><i class="far fa-moon" style="display: flex; justify-content: right; color:black; text-decoration: none;"></i></a>
+          </div>
       <br>
         <h1 class="day"><span style="font-family: Shackleton-condensed; font-size: 72px">
           Alex Holder
@@ -21,7 +27,7 @@
             <br><span style="font-size: 48px;">User Experience</span></h1>
             <br><br>
       <div class="buttons">
-        <a class="btn btn-ghost" href="work.html">See my work</a>
+        <a class="btn btn-ghost" href="work-day.html">See my work</a>
       </div>
       <div class="footer footer-sticky">
         <div class="footer-links">
@@ -37,6 +43,19 @@
     </div>
   </div>
 </div>
+<script>
+      let icon = document.getElementById('palm')
+      let body = document.getElementById('body')
+      // let morning = document.getElementById('morning')
+      // let container = document.getElementById('container')
+
+      icon.addEventListener('click', (event) => {
+        event.preventDefault()
+        body.style.backgroundColor = "black"
+      })
+
+
+    </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

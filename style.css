@@ -5,7 +5,6 @@ html, body {
 }
 
 .image {
-  background-image:url(https://res.cloudinary.com/alexh/image/upload/v1596288019/DSC05368_aufrrz.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,14 +12,17 @@ html, body {
   background-color: #464646;
 }
 
+
 #morning {
   background-image: linear-gradient(rgb(255 255 255 / 86%),rgb(199 158 42 / 40%)), url(https://res.cloudinary.com/alexh/image/upload/v1596288019/DSC05368_aufrrz.jpg);
-
 }
+
 
 #evening {
-  background-image: linear-gradient(#1d2061,rgba(0,0,0,0.4)), url(https://res.cloudinary.com/alexh/image/upload/v1596288019/DSC05368_aufrrz.jpg);
+  background-image: linear-gradient(#1d2061,rgba(0,0,0,75%)), url(https://res.cloudinary.com/alexh/image/upload/v1596288019/DSC05368_aufrrz.jpg);
 }
+
+
 
 a {
   text-decoration: none!important;
@@ -55,7 +57,7 @@ a {
 }
 
 .day {
-  background-color: rgba(255,255,255, 0.4);
+  background-color: rgba(255,255,255, 0.8);
   width: 50%;
   border-radius: 5px;
   margin: 0;
@@ -80,6 +82,26 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.container-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-night {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-night h1 {
+  padding: 7% 0;
+}
+
+.container-day h1 {
+  padding: 7% 0;
 }
 
 .btn {
@@ -179,9 +201,11 @@ a {
 .footer-links {
   display: flex;
   align-items: center;
+  color: #495057;
+  opacity: .8
 }
 .footer-links a {
-  color: black;
+  color: #495057;
   opacity: 0.8;
   text-decoration: none;
   font-size: 24px;
@@ -215,6 +239,12 @@ a {
   color: black;
 }
 
+.footer-copyright-night {
+  color: white;
+}
+
+
+
 .buttons {
   display: flex;
   margin: 0 52px;
@@ -223,4 +253,10 @@ a {
   flex-direction: row;
   justify-content: space-around;
   width: 50%;
+}
+
+.wrapper-night {
+  background-color: #212121;
+  color: white;
+  height: 100%;
 }
